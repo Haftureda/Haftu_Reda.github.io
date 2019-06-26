@@ -1,0 +1,26 @@
+h3,h1 {
+    color: skyblue
+    
+}
+*{background-color: darkgrey
+}
+ 
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  p::first-letter { 
+    font-size: 150%;
+  }
