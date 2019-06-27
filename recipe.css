@@ -1,9 +1,10 @@
 
-.mainbody{background-color: white;
+.mainbody{
+    background-color: white;
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
-    background-image: url("images/silverware.jpg")
+    background-image: url("silverware.jpg")
     }
 a{
     color:  #A4A400;
@@ -13,7 +14,8 @@ a{
     font-family: 'DLucida Sans Unicode', Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 18pt;
-    text-decoration: underline}
+    text-decoration: underline
+}
 #main-heading{text-align: center;
     font-size: 22pt;
     font-weight: bold}
@@ -26,12 +28,16 @@ h2{
     margin: 30pt 30pt
 }
 #footer{text-align: left}
-#copyright{ text-align: right;
-    margin-right: 700pt}
+#copyright{  
+   width: fit-content;
+    text-align: left;
+    margin-left: 15px;
+   
+}
 ul{
     list-style-type:square;
     list-style-position:inside;
-    list-style-image:url('images/pie_icon.gif');
+    list-style-image:url('pie_icon.gif');
 }
 #pielist{
     list-style-type:none;
@@ -39,3 +45,8 @@ ul{
     list-style-image: none
 }
 
+#validation{   
+    margin-left: 5px;
+    text-align: left;
+   
+}
