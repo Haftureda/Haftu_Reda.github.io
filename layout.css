@@ -1,0 +1,50 @@
+body{
+    position: center;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+#man-journal{ 
+    border: 10px solid white;
+    background-color: white;
+
+}
+#header{
+    background-color: #A8F0F0
+}
+.top-head{
+    text-align: right
+}
+
+
+#remark{
+    font-size: 14pt
+}
+.journals{
+    border: 4px solid #C2E9E9;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+    overflow: auto;
+    border-radius: 15px}
+.dates{
+    border-bottom: 2px dashed blue
+}
+
+.journal-img{
+    float: right;
+    clear: both;
+}
+#friends{
+    border: 4px solid cadetblue;
+    width: 28%;
+    border-radius: 15px;
+    background-color: lightskyblue;
+    }
+#rightContainer{
+    float: right;
+    width: 70%;   
+
+}
+#clr{
+    clear: both;
+}
