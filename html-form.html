@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="forms.css" type="text/css" rel="stylesheet" />
+
+</head>
+<div>
+
+ <form action="" method="post">
+     <h1> Personal Information</h1>
+    <div id="personalInfo">
+    <label>First Name</label> <input type="text" name="firstname" value="" required/>
+    </div>
+     <div>
+     <label>Last Name</label><input type="text" name="lastname" value="" required/>
+     </div>
+     <div>
+     <label>Mother’s Maiden Name</label><input type="text" name="dob" value="DD/MM/YYYY" required/>
+     </div>
+     <div>
+     <label>Date of Birth</label> <input type="text" name="mothersname" value="" required/>
+     </div>
+     <div>
+     <label>Social Insurance Number (Optional)</label> <input type="text" name="ssn" value="" required/>
+    </div>
+    <label>How did you learn about this card? (Optional)</label>
+
+     <select id="personal-learn-about-source" name="personalLearnAbout" class="">
+         <option value="" disabled="">Select source</option>
+         <option value="mailOffer">Mail Offer</option><option value="familyFriend">Family or Friend</option>
+         <option value="sponsoredEvent">CapitalOne Sponsored Event</option>
+         <option value="onlineBanner">Online Banner Ad or Video</option>
+         <option value="email">Email with CapitalOne Content</option>
+         <option value="facebook">Facebook Ad or Video</option>
+         <option value="magazine">Magazine</option>
+         <option value="television">Television</option>
+         <option value="other">Other</option>
+         <option value="outdoorAd">Outdoor or Transit Ad</option>
+         <option value="comparisonSite">Credit Cards Comparison Site</option>
+         <option value="newspaper">Newspaper</option>
+         <option value="searchEngine">Search Engine</option>
+     </select>
+
+         <header class="row column text-center">
+ <h2><span>Contact Information</span></h2>
+         </header>
+   <div class="row column">
+    <label>
+    <span>Home Address (No P.O. Boxes)</span>
+    </label>
+        <input  maxlength="120" aria-required="true" value="" autocomplete="off" required>
+   </div>
+    <div class="validation-wrapper">
+        <span>Suite/Apt. # </span>
+        <span>(if Applicable)</span>
+        <input autocomplete="off" autocorrect="off" id="contact-apartment" maxlength="15"  type="text" value="" >
+    </div>
+
+       <div class="validation-wrapper">
+           <span>City</span>
+           <input autocomplete="off" autocorrect="off" id="city" maxlength="40" aria-required="true" class="" type="text" value="" required>
+       </div>
+       <div>
+           <span>Province</span>
+       <select id="contact-province" name="contact-province" aria-required="true" aria-invalid="true" aria-describedby="contact-province-error" class="is-invalid-input" required>
+           <option value="">Select province</option>
+           <option value="AB">AB</option>
+           <option value="BC">BC</option>
+           <option value="MB">MB</option>
+           <option value="NB">NB</option>
+           <option value="NL">NL</option>
+           <option value="NS">NS</option>
+           <option value="NT">NT</option>
+           <option value="NU">NU</option>
+           <option value="ON">ON</option>
+           <option value="PE">PE</option>
+           <option value="QC">QC</option>
+           <option value="SK">SK</option>
+           <option value="YT">YT</option>
+       </select>
+        </div>
+    <label for="contact-email">
+    <span>Email Address</span>
+    </label>
+    <div class="validation-wrapper">
+        <input autocomplete="off" autocorrect="off" id="contact-email" maxlength="40" aria-required="true" class="" type="text" value="" required>
+    </div>
+
+    <div class="text-input small-12 medium-6 columns required">
+    <label for="contact-phone">
+    <span>Primary Phone Number</span>
+    </label>
+    <div class="validation-wrapper">
+        <input autocomplete="off" autocorrect="off" id="contact-phone" aria-required="true" class="" type="tel" value="(___) ___-____" required pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+    </div>
+    </div>
+
+     <div>
+       <fieldset>
+           <input type="checkbox" name="addAuthorized"/>
+           <label>Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.</label>
+
+       </fieldset>
+     </div>
+
+    <div>
+
+         <input type="radio" name="apartment"/>  <label> Own </label>
+         <input type="radio" name="apartment"/>  <label> Rent </label>
+         <input type="radio" name="apartment"/>  <label> Live with parents</label>
+         <input type="radio" name="apartment"/>  <label> other</label>
+    </div>
+     <div>
+         <label> Your Annual Income (Before Taxes) </label>
+         <input type="text" name="income" maxlength="10" required/>
+         <label> Other Household Income (Before Taxes) </label>
+         <input type="text" name="otherincome" maxlength="10" required/>
+     </div>
+
+     <div>
+         <label> Do you have morgage </label>
+         <input type="radio" name="morgage"/> <label>Yes</label>
+         <input type="radio" name="morgage"/>  <label>No</label>
+
+     </div>
+
+     <input type="submit" name="submit" value="Review My Application"/>
+ </form>
+</div>
+<body>
+</body>
+</html>
