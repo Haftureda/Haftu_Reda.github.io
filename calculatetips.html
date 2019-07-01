@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip calculator</title>
+    <style>
+        div{
+            position: relative;
+           top:100px;
+            left:300px;           
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        span{
+            font-size: 26px;
+            font-weight: bold;
+        }
+        img{
+            float:left;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="calc.jpg"/>
+    <h1> Tip Calculator</h1>
+   <p><input id="input1" type="text"> $subtotal</p>
+    <p><input id="percent" type="text"> %Tip</p>
+    <button id="calc"><h3>CalculateTip</h3></button>
+    <hr>
+    <span>Subtotal:</span>
+    <span id ="sub"> </span>
+   
+</div>
+
+   
+   
+    <script type ="text/javascript">
+    document.getElementById("calc").onclick=function(){
+        var subt=document.getElementById("input1").value;
+        
+        var perce=document.getElementById("percent").value;
+        
+        var total=subt*(1+ perce/100);
+        
+        document.getElementById("sub").innerHTML='$'+ total;
+
+    }   
+    </script>
+
+</body>
+</html>
