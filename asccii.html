@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="anim.css" type="text/css" rel="stylesheet">
+    <script src="animations.js" type="text/javascript" ></script>
+    <title>ASCCI Animation</title>
+</head>
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+    <textarea id="textarea" type="text" cols="120" rows="25"></textarea>
+    <div id="controller">
+    <fieldset>
+    <legend>Play controls </legend>
+
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+    </fieldset>
+    <fieldset>
+            <legend>Animation </legend>
+        
+                <select id ="anitype">
+                    <option>Blank</option>
+                    <option>Excercise</option>
+                    <option>Juggler</option>
+                    <option>Bike</option>
+                    <option>Dive</option>
+                    <option>Custom</option>
+                </select>
+               
+            </fieldset>
+            <fieldset>
+                    <legend>Size </legend>
+                
+                    <select id="size">
+                            <option>Medium</option>
+                            <option>Tiny</option>
+                            <option>Small</option>
+                            <option>Large</option>
+                            <option>Extra Large</option>
+                            <option>XXL</option>
+                        </select>
+                     
+                    </fieldset>
+                    <fieldset>
+                            <legend>Speed </legend>
+                        
+                            <input id="checkbox" type="checkbox"> <label>Turbo</label>                     
+                            
+                             
+                            </fieldset>
+                </div>
+                <script>
+                    document.getElementById("textarea").innerHTML=animations.js;
+                </script>
+    
+</body>
+</html>

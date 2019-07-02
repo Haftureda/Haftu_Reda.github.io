@@ -1,0 +1,14 @@
+fieldset{
+    display: inline;
+   border: 5px solid;
+    margin: auto;
+   
+}
+#controller{
+    position: relative;
+    left: 200px;
+    
+}
+body{
+    background-color:lightblue;
+}
