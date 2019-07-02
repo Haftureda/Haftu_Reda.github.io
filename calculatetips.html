@@ -28,15 +28,18 @@
             top:300px;
             left:300px;
         }
+        #calc{
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
 <div>
-    <img src="calc.jpg"/>
+    <img src="calc.jpg" alt="Take the tip"/>
     <h1> Tip Calculator</h1>
    <p><input id="input1" type="text"> $Subtotal</p>
     <p><input id="percent" type="text"> %Tip</p>
-    <button id="calc"><h3>CalculateTip</h3></button>
+    <button id="calc">CalculateTip</button>
     <hr>
     <span>Total:</span>
     <span id ="sub"> </span>
@@ -45,7 +48,7 @@
 
    
    
-    <script type ="text/javascript">
+    <script>
     document.getElementById("calc").onclick=function(){
         var subt=document.getElementById("input1").value;
         
